@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="robots" content="noindex">
+        <title>Lind Old Boys</title>
+         <!-- Ændret titlen for Index filen til "Lind Old Boys"-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+            <!-- Vi var desværre ikke i stand til at ændre den font vi ønskede ifølge vores styletiles. Der bedes om at referer til vores mockups/wireframes for at få den komplette oversigt-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <!-- Linket til css'en, men vi har valgt bruge inline css-->
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigationsbaren er brugt i forbindelse med responsive design og fungerer som menu på små enheder som tablet eller telefon-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Lind Old Boys</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                 <!-- Omformuleret listen så den passer til vores hjemmeside og at det bliver en dropdown menu, dog når man klikker ind på dem er der ikke tilsvarende undersider-->
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-lg-3 py-3 py-lg-4" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Info
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="subpage1.html">Nyheder</a></li>
+                              <li><a class="dropdown-item" href="subpage2.html">Vedtægter</a></li>
+                              <li><a class="dropdown-item" href="subpage3.html">Links</a></li>
+                              <li><a class="dropdown-item" href="subpage4.html">Generalforsamling</a></li>
+                              <li><a class="dropdown-item" href="subpage5.html">Privatspolitik</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Omos.html">Om os</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Arrangement.html">Arrangementer</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-lg-3 py-3 py-lg-4" href="Aktiviteter.html" id="activitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Aktiviteter
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="activitiesDropdown">
+                              <li><a class="dropdown-item" href="activity1.html">Fodbold</a></li>
+                              <li><a class="dropdown-item" href="activity2.html">Badminton</a></li>
+                              <li><a class="dropdown-item" href="activity3.html">Løb</a></li>
+                              <li><a class="dropdown-item" href="activity4.html">Volley</a></li>
+                              <li><a class="dropdown-item" href="activity5.html">Motion og Fitness</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="Priser.html">Priser</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+         <!--Vi har valgt at beholde billedet fra den originale bootstrap template, da vi synes at billedet passer meget overens med forenings visuelle udtryk som er lidt "gentlemen tema og old money style"-->
+        <header class="masthead" style="background-image: url('assets/img/contact-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Kontakt os</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <!-- Vi valgte at sætte fokus strong element på emailen, så det er nemt for brugeren at se hvad der er vigtigt-->
+                        <p>Hvis du har spørgsmål eller gerne vil være medlem, er du velkommen til at kontakt os ved at udfylde formularen herunder eller send en email til os på <Strong>Lindoldboys@gmail.com</Strong>
+                        <div class="my-5">
+                        <!--Selve formen er fra den orignale bootstrap, men vi har ændret placeholderne og de forskellige labels. Derudover har vi selv lavet "submit-button" så den passer overens med vores styletiles-->
+                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <div class="form-floating">
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required">
+                                    <label for="name">Dit Navn</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="email" type="email" placeholder="Enter your email..." data-sb-validations="required,email">
+                                    <label for="email">Din E-mail Adresse</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required">
+                                    <label for="phone">Dit Telefonnummer</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                </div>
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                
+                                <!-- Submit Button-->
+                                 <br>
+                                 <button style="background-color: #23401c; cursor: pointer;" class="btn btn-primary text-uppercase" id="submitButton" type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+         <!-- Footer, vi har anvendt en grå baggrundsfarve som også er tilsvarende til vores styletiles-->
+        <footer style="text-align: center; padding: 20px 0; background-color: #f5f5f5; color: #23401c; position: relative;">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+             <!--Vi har valgt at beholde facebook ikonet og ændret a-elementet til deres facebookside. Det gør det nemt at tilgå deres facebookside-->
+                <ul class="list-inline" style="padding: 0; margin: 0; display: flex; justify-content: center;">
+                    <li class="list-inline-item" style="margin-right: 15px;">
+                        <a href="https://facebook.com/lindoldboys">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="small text-muted fst-italic" style="margin-top: 10px;">&copy; Lind Old Boys 2024</div>
+            </div>
+        </footer>
+         <!-- Bootstrap core JS-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+         <!-- Core theme JS-->
+         <script src="js/scripts.js"></script>
+    </body>
+</html>
